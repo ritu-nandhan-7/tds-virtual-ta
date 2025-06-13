@@ -10,6 +10,15 @@ This assistant uses:
 - 🌐 Hosted on [Render](https://render.com/)
 
 ---
+## 🧩 Discourse & Course Content Scraping
+
+The `/scraping/` folder contains:
+- `course_scraping.py` – scrapes course pages into markdown
+- `discourse_scraping.py` – fetches Discourse posts by date range
+- `discourse_posts.json` – scraped discourse output
+- `metadata.json`, `auth.json` – metadata of course content + credentials
+
+These scripts demonstrate the ability to generate structured datasets dynamically, as required for the bonus criteria.
 
 ## 🚀 Deployed App
 
