@@ -656,8 +656,11 @@ async def query_knowledge_base(request: QueryRequest):
         logger.error(f"Unhandled exception in query_knowledge_base: {e}")
         logger.error(traceback.format_exc())
         return {"answer": "An unexpected error occurred.", "links": []}
-
 # Health check endpoint
+@app.get("/")
+def root():
+    return {"message": "✅ Virtual TA is live on Render!"}
+
 @app.get("/health")
 async def health_check():
     try:
